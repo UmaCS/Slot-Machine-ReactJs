@@ -12,7 +12,6 @@ const symbolGenerator = () => {
 function App() {
   return(
     <div>
-    <h1>Slot Machines!</h1>
       <Machine 
       s1={symbolGenerator()}
       s2={symbolGenerator()}

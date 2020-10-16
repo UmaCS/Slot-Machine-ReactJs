@@ -36,7 +36,12 @@
     transform: rotate(360deg);
   }
 }
-.tweet{
-  border: solid black;
+.Machine{
+  font-size: 35px;
   display: flex;
+  justify-content: center;
+}
+.win{
+  background-color: grey;
+  font-style: bold;
 }

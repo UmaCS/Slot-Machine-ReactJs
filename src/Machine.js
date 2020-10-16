@@ -2,12 +2,17 @@ import React from 'react';
 
 class Machine extends React.Component{
     render(){
-        const props = this.props;
+        const {s1,s2,s3} = this.props;
+        const winner = (s1 === s2 && s2 === s3);
 
-        return <div>
-            {props.s1}{props.s2}{props.s3}
-            <p>{props.s1 === props.s2 && props.s2 === props.s3 ? "YOU WIN!" : "You Lose!"}</p>
+        return (
+            <div className="Machine">
+            <p>{s1}{s2}{s3}</p>
+            <p className={winner ? 'win' : ''}>
+            {winner ? "YOU WIN!" : "You Lose!"}
+            </p>
         </div>
+        )
     }
 }
 export default Machine;
